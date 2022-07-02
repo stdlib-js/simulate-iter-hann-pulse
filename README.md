@@ -78,7 +78,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterHannPulse;
+})();
 })();
 </script>
 ```
@@ -292,6 +294,7 @@ var bool = it.next().done;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 // Create an iterator:
 var opts = {
@@ -313,6 +316,7 @@ while ( true ) {
     console.log( v.value );
 }
 
+})();
 })();
 </script>
 </body>
@@ -418,11 +422,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/simulate/iter/bartlett-hann-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-hann-pulse/tree/umd
+[@stdlib/simulate/iter/bartlett-hann-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-hann-pulse/tree/umd/tree/umd
 
-[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse/tree/umd
+[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse/tree/umd/tree/umd
 
-[@stdlib/simulate/iter/sine-wave]: https://github.com/stdlib-js/simulate-iter-sine-wave/tree/umd
+[@stdlib/simulate/iter/sine-wave]: https://github.com/stdlib-js/simulate-iter-sine-wave/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
