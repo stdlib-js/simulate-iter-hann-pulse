@@ -32,10 +32,14 @@ A Hann pulse waveform is represented by the following equation
 
 <!-- <equation class="equation" label="eq:hann_pulse_waveform" align="center" raw="f(t; T, \tau, a, \varphi) = \begin{cases} \frac{a}{2}\biggl(1-\cos \frac{2\pi (t-\varphi)}{\tau-1}\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}" alt="Equation for a Hann pulse waveform."> -->
 
-<div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases} \frac{a}{2}\biggl(1-\cos \frac{2\pi (t-\varphi)}{\tau-1}\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:hann_pulse_waveform">
+```math
+f(t; T, \tau, a, \varphi) = \begin{cases} \frac{a}{2}\biggl(1-\cos \frac{2\pi (t-\varphi)}{\tau-1}\biggr) & (t-\varphi) \mod T < \tau \\ 0 & \textrm{otherwise} \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="f(t; T, \tau, a, \varphi) = \begin{cases} \frac{a}{2}\biggl(1-\cos \frac{2\pi (t-\varphi)}{\tau-1}\biggr) &amp; (t-\varphi) \mod T < \tau \\ 0 &amp; \textrm{otherwise} \end{cases}" data-equation="eq:hann_pulse_waveform">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@08cee6de617d64ec3324479142e1cdf0036898d8/lib/node_modules/@stdlib/simulate/iter/hann-pulse/docs/img/equation_hann_pulse_waveform.svg" alt="Equation for a Hann pulse waveform.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -49,38 +53,30 @@ where `T` is the pulse period, `τ` is the pulse duration, `a` is the amplitude,
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/simulate-iter-hann-pulse
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterHannPulse = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterHannPulse = require( 'path/to/vendor/umd/simulate-iter-hann-pulse/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterHannPulse;
-})();
-</script>
+var iterHannPulse = require( '@stdlib/simulate-iter-hann-pulse' );
 ```
 
 #### iterHannPulse( \[options] )
@@ -285,13 +281,8 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterHannPulse = require( '@stdlib/simulate-iter-hann-pulse' );
 
 // Create an iterator:
 var opts = {
@@ -312,11 +303,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -339,9 +325,9 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/simulate/iter/bartlett-hann-pulse`][@stdlib/simulate/iter/bartlett-hann-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Bartlett-Hann pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/pulse`][@stdlib/simulate/iter/pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a pulse waveform.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/sine-wave`][@stdlib/simulate/iter/sine-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sine wave.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/bartlett-hann-pulse`][@stdlib/simulate/iter/bartlett-hann-pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Bartlett-Hann pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/pulse`][@stdlib/simulate/iter/pulse]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a pulse waveform.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/sine-wave`][@stdlib/simulate/iter/sine-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sine wave.</span>
 
 </section>
 
@@ -400,7 +386,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -418,11 +404,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/simulate/iter/bartlett-hann-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-hann-pulse/tree/umd
+[@stdlib/simulate/iter/bartlett-hann-pulse]: https://github.com/stdlib-js/simulate-iter-bartlett-hann-pulse
 
-[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse/tree/umd
+[@stdlib/simulate/iter/pulse]: https://github.com/stdlib-js/simulate-iter-pulse
 
-[@stdlib/simulate/iter/sine-wave]: https://github.com/stdlib-js/simulate-iter-sine-wave/tree/umd
+[@stdlib/simulate/iter/sine-wave]: https://github.com/stdlib-js/simulate-iter-sine-wave
 
 <!-- </related-links> -->
 
