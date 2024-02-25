@@ -71,6 +71,11 @@ where `T` is the pulse period, `τ` is the pulse duration, `a` is the amplitude,
 ## Usage
 
 ```javascript
+import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/simulate-iter-hann-pulse/tags). For example,
+
+```javascript
 import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@v0.2.1-esm/index.mjs';
 ```
 
@@ -282,7 +287,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@v0.2.1-esm/index.mjs';
+import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@esm/index.mjs';
 
 // Create an iterator:
 var opts = {
