@@ -71,6 +71,11 @@ where `T` is the pulse period, `τ` is the pulse duration, `a` is the amplitude,
 ## Usage
 
 ```javascript
+import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/simulate-iter-hann-pulse/tags). For example,
+
+```javascript
 import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@v0.2.2-deno/mod.js';
 ```
 
@@ -277,7 +282,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@v0.2.2-deno/mod.js';
+import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@deno/mod.js';
 
 // Create an iterator:
 var opts = {
