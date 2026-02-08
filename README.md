@@ -71,7 +71,7 @@ where `T` is the pulse period, `τ` is the pulse duration, `a` is the amplitude,
 ## Usage
 
 ```javascript
-import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@esm/index.mjs';
+import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@v0.2.3-esm/index.mjs';
 ```
 
 #### iterHannPulse( \[options] )
@@ -282,7 +282,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@esm/index.mjs';
+import iterHannPulse from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-hann-pulse@v0.2.3-esm/index.mjs';
 
 // Create an iterator:
 var opts = {
